@@ -1,12 +1,13 @@
 //import { main } from "motion/react-client";
 //import Image from "next/image";
 import Main from "./dashboard/page";
-type Data = {
-  name: string;
-}
-
+//import { BackgroundLines } from "@/components/ui/background-lines";
 const Home = () => {
 
-  return <Main />
+  return (
+      
+      <Main />
+  
+  )
 }
 export default Home;
