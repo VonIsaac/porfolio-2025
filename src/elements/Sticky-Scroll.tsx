@@ -36,7 +36,7 @@ const content = [
   },
   {
     title: "Share Gadgets",
-    description: "Easily upload and share documents with just a few clicks.",
+    description: "User can share their favorite gadgets with others like a community for sharing gadgets.",
     content: (
       <div className="relative flex h-full w-full items-center justify-center text-white">
         <Image
