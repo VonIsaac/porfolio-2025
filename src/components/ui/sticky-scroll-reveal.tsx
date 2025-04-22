@@ -4,6 +4,13 @@ import { useMotionValueEvent, useScroll } from "motion/react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
+const linearGradients = [
+  "linear-gradient(to bottom right, #06b6d4, #10b981)",
+  "linear-gradient(to bottom right, #ec4899, #6366f1)",
+  "linear-gradient(to bottom right, #f97316, #eab308)",
+  "linear-gradient(to bottom right, #9333ea, #3b82f6)",
+];
+
 export const StickyScroll = ({
   content,
   contentClassName,
@@ -16,30 +23,22 @@ export const StickyScroll = ({
   contentClassName?: string;
 }) => {
   const [activeCard, setActiveCard] = useState(0);
-  const ref = useRef<any>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     container: ref,
-    offset: ["start start", "end end"], // Changed from "end start" to "end end"
+    offset: ["start start", "end end"],
   });
 
   const cardLength = content.length;
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const clamped = Math.max(0, Math.min(1, latest));
-    // Calculate which card should be active based on scroll position
     const cardIndex = Math.min(
-      Math.floor(clamped * cardLength * 1.15), // Multiply by slight factor to ensure last card is reachable
+      Math.floor(clamped * cardLength * 1.15),
       cardLength - 1
     );
     setActiveCard(cardIndex);
   });
-
-  const linearGradients = [
-    "linear-gradient(to bottom right, #06b6d4, #10b981)",
-    "linear-gradient(to bottom right, #ec4899, #6366f1)",
-    "linear-gradient(to bottom right, #f97316, #eab308)",
-    "linear-gradient(to bottom right, #9333ea, #3b82f6)",
-  ];
 
   const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
 
@@ -73,7 +72,7 @@ export const StickyScroll = ({
               </motion.p>
             </div>
           ))}
-          <div className="h-60" /> {/* Increased padding at bottom for more scroll space */}
+          <div className="h-60" />
         </div>
       </div>
 
@@ -81,7 +80,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "sticky top-10 hidden h-70 w-[550] overflow-hidden rounded-md bg-white lg:block",
+          "sticky top-10 h-60 w-[500px] overflow-hidden rounded-md bg-white lg:block",
           contentClassName
         )}
       >

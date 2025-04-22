@@ -4,7 +4,7 @@ import Main from "./dashboard/page";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect, useState } from 'react'
-import Loading from "@/components/ui/loading";
+import Loading from "@/components/ui/Loading";
 const Home = () => {
   const [loading, setLoading] = useState<boolean>(false)
     useEffect(() => {

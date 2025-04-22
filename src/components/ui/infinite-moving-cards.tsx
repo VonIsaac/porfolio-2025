@@ -1,7 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback, useRef } from "react";
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
   items,
@@ -18,30 +19,9 @@ export const InfiniteMovingCards = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
-
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLUListElement>(null);
   const [start, setStart] = useState(false);
-
-  useEffect(() => {
-    addAnimation();
-  }, []);
-
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
-
-      getDirection();
-      getSpeed();
-      setStart(true);
-    }
-  }
 
   const getDirection = () => {
     if (containerRef.current) {
@@ -59,6 +39,24 @@ export const InfiniteMovingCards = ({
       containerRef.current.style.setProperty("--animation-duration", duration);
     }
   };
+
+  const addAnimation = useCallback(() => {
+    if (containerRef.current && scrollerRef.current) {
+      const scrollerContent = Array.from(scrollerRef.current.children);
+      scrollerContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true);
+        scrollerRef.current?.appendChild(duplicatedItem);
+      });
+
+      getDirection();
+      getSpeed();
+      setStart(true);
+    }
+  }, [direction, speed]);
+
+  useEffect(() => {
+    addAnimation();
+  }, [addAnimation]);
 
   return (
     <div
@@ -81,10 +79,12 @@ export const InfiniteMovingCards = ({
             key={idx}
             className="relative w-[160px] h-[160px] max-w-full shrink-0 flex items-center justify-center rounded-2xl border border-zinc-200 bg-gradient-to-b from-[#fafafa] to-[#f5f5f5] p-4 dark:border-zinc-700 dark:from-zinc-800 dark:to-zinc-900"
           >
-            <img
+            <Image
               src={item.svg}
               alt={`SVG ${idx}`}
-              className="w-20 h-20 object-contain"
+              width={80}
+              height={80}
+              className="object-contain w-20 h-20"
             />
           </li>
         ))}

@@ -1,30 +1,35 @@
 "use client";
 import React from "react";
+import Image from "next/image"; // ✅ Import Next.js Image component
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 
 const content = [
   {
     title: "Air Jordan 1 Retro High OG",
-    description: "The Air Jordan 1 Retro High OG is a classic sneaker that combines style and performance.",
+    description:
+      "The Air Jordan 1 Retro High OG is a classic sneaker that combines style and performance.",
     content: (
-      <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+      <div className="relative flex h-full w-full items-center justify-center text-white">
+        <Image
           src="/project-image/AirJordan.png"
           alt="jordan"
-          className="h-full w-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
     ),
   },
   {
     title: "Snapbuy",
-    description: "Snapbuy is ecomerce reference that allow user to buy add to cart like a ecommerce.", 
+    description:
+      "Snapbuy is ecommerce reference that allows users to buy and add to cart like a real ecommerce site.",
     content: (
-      <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+      <div className="relative flex h-full w-full items-center justify-center text-white">
+        <Image
           src="/project-image/Snapbuy.png"
           alt="Snap"
-          className="h-full w-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
     ),
@@ -33,24 +38,27 @@ const content = [
     title: "Share Gadgets",
     description: "Easily upload and share documents with just a few clicks.",
     content: (
-      <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+      <div className="relative flex h-full w-full items-center justify-center text-white">
+        <Image
           src="/project-image/Share.png"
           alt="share"
-          className="h-full w-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
     ),
   },
   {
-    title: "Scholarship Management System", 
-    description: "Our dashboard helps you monitor academic achievements in real time.",
+    title: "Scholarship Management System",
+    description:
+      "Our dashboard helps you monitor academic achievements in real time.",
     content: (
-      <div className="flex h-full w-full items-center justify-center text-white">
-        <img
+      <div className="relative flex h-full w-full items-center justify-center text-white">
+        <Image
           src="/project-image/Scholar.png"
           alt="scholar"
-          className="h-full w-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
     ),
