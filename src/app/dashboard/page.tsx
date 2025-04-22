@@ -5,14 +5,17 @@ import { TypeAnimation } from 'react-type-animation'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import { TimeLine } from '@/elements/TimeLine';
-
+import { Infinite } from '@/elements/Infinite';
+import StickyScrollRevealDemo from '@/elements/Sticky-Scroll';
 
 export default function Main() {
-  console.log('Main')
+  console.log('Main');
+
+  
   return (
    <>
   
-      <div className=' ' id='home'>
+      <div className=' ' id='home' >
         <div className='text-white'>
           <nav className="flex justify-between items-center px-10 py-4 text-white sticky top-0 bg-transparent  shadow-[0_3px_10px_rgb(0,0,0,0.2)]  ">
               <div className="text-xl font-bold">
@@ -27,7 +30,7 @@ export default function Main() {
               </div>
           </nav>
 
-          <header className="px-5 py-4 h-screen flex items-center">
+          <header className="px-5 py-4 h-screen flex items-center" data-aos="fade-right" >
               <div className="max-w-3xl ml-10 ">
                 <div>
                   <p className="tracking-wider text-sky-300">Hi there, I am</p>
@@ -65,7 +68,10 @@ export default function Main() {
               
             </header>
             <main>
+              <Infinite />
+              <StickyScrollRevealDemo />
               <TimeLine />
+             
             </main>
             
         </div>

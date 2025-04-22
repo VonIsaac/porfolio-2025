@@ -25,7 +25,7 @@ export function TimeLine() {
     {
       title: "2022 - 2025",
       content: (
-        <div>
+        <div data-aos="fade-left">
         
           <p className="mb-8 text-xs font-bold text-sky-500 md:text-sm tracking-wider hover:text-sky-800    ">
             UNIVERSITY OF MUNTINLUPA - Bachelor of Science in Information Technology
@@ -44,7 +44,7 @@ export function TimeLine() {
     {
       title: "Present",
       content: (
-        <div>
+        <div data-aos="fade-left">
           <p className="mb-8 text-xs font-bold text-sky-500 md:text-sm tracking-wider hover:text-sky-800">
             Freelance Web Developer
           </p>
