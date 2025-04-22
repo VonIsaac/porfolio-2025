@@ -8,6 +8,10 @@ import { TimeLine } from '@/elements/TimeLine';
 import { Infinite } from '@/elements/Infinite';
 import StickyScrollRevealDemo from '@/elements/Sticky-Scroll';
 import Footer from '@/components/ui/Footer';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 export default function Main() {
   console.log('Main');
 
@@ -23,10 +27,18 @@ export default function Main() {
               </div>
 
               <div className="flex gap-6 text-sm md:text-base">
-                <a href="#home" className="transition cursor-pointer text-slate-300 hover:text-neutral-200 tracking-wide">Home</a>
-                <a href="#about" className="transition text-slate-300 hover:text-neutral-200 tracking-wide">About</a>
-                <a href="#project" className="transition text-slate-300 hover:text-neutral-200 tracking-wide" >Project</a>
-                <a href="#technology" className="transition text-slate-300 hover:text-neutral-200 tracking-wide">Technology</a>
+                <a href="https://www.facebook.com/von.von0323" className="transition cursor-pointer text-slate-300 hover:text-neutral-200 tracking-wide">
+                  <FacebookIcon className="text-sky-700" />
+                </a>
+                <a href="https://www.instagram.com/vnisac/" className="transition text-slate-300 hover:text-neutral-200 tracking-wide">
+                  <InstagramIcon className="text-sky-700" />
+                </a>
+                <a href="https://www.linkedin.com/in/vonisaac23/" className="transition text-slate-300 hover:text-neutral-200 tracking-wide" >
+                  <LinkedInIcon className="text-sky-700"  />
+                </a>
+                <a href="mailto:vonbaban1@gmail.com"  className="transition text-slate-300 hover:text-neutral-200 tracking-wide">
+                  <EmailIcon className="text-sky-700" />
+                </a>
               </div>
           </nav>
 
