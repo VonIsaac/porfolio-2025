@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { TimeLine } from '@/elements/TimeLine';
 import { Infinite } from '@/elements/Infinite';
 import StickyScrollRevealDemo from '@/elements/Sticky-Scroll';
-
+import Footer from '@/components/ui/Footer';
 export default function Main() {
   console.log('Main');
 
@@ -73,7 +73,7 @@ export default function Main() {
               <TimeLine />
              
             </main>
-            
+            <Footer />
         </div>
       </div>
    
