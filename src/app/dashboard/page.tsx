@@ -68,12 +68,11 @@ export default function Main() {
                 </div>
                 <div className=' mt-10 *:flex flex-col gap-2 tracking-wider text-slate-300'>
                   <p className=''>
-                      A devoted and passionate about building websites.
-                      I cant wait to use my in-depth understanding of web development to create creative and intuitive online experiences.
-                      and I&apos;m always investigating new technology
-                      to maintain an advantage in the ever changing field of web development. 
-                      My objective is to provide fluid, quick, 
-                      and captivating web experiences that address actual issues while still looking fantastic.
+                    Results-driven aspiring Full Stack Developer with a strong foundation in JavaScript and a passion for building web applications.
+                    Eager to learn and grow by contributing to real-world projects, 
+                    while continuously improving coding skills and exploring modern web development tools and frameworks. Dedicated to writing clean,
+                    efficient code and collaborating with teams to deliver high-quality user experiences. 
+                    Seeking opportunities to gain hands-on experience, expand technical expertise, and grow within a dynamic development environment.
                   </p>
                 </div>
               </div>
