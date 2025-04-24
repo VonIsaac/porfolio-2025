@@ -12,7 +12,7 @@ const testimonials = [
   { svg: "/svg/Postman.svg" },
   { svg: "/svg/Mongo.svg" },
   { svg: "/svg/Express.svg" },
-  { svg: "/svg/Typescript.svg" },
+  { svg: "/svg/TypeScript.svg" },
   { svg: "/svg/HTML.svg" },
   { svg: "/svg/JavaScript.svg" },
   { svg: "/svg/AntDesign.svg" },
