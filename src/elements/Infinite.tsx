@@ -21,6 +21,7 @@ const testimonials = [
   { svg: "/svg/NPM.svg" },
   { svg: "/svg/Node.svg" },
   { svg: "/svg/jwt.svg" },
+  { svg: "/svg/Sequelize.svg" },
 ];
 
 export function Infinite() {
