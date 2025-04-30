@@ -23,7 +23,7 @@ export function TimeLine() {
       ),
     },
     {
-      title: "2022 - 2025",
+      title: "2022 - 2026",
       content: (
         <div data-aos="fade-left">
         

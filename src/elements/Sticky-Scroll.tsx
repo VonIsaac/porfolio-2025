@@ -20,13 +20,13 @@ const content = [
     ),
   },
   {
-    title: "Snapbuy",
+    title: "Advance Authentication",
     description:
-      "Snapbuy is ecommerce reference that allows users to buy and add to cart like a real ecommerce site.",
+      "The Advance Authentication system provides jwt token, reset password sending email.",
     content: (
       <div className="relative flex h-full w-full items-center justify-center text-white">
         <Image
-          src="/project-image/Snapbuy.png"
+          src="/project-image/Auth.png"
           alt="Snap"
           fill
           className="object-cover"
@@ -56,6 +56,21 @@ const content = [
       <div className="relative flex h-full w-full items-center justify-center text-white">
         <Image
           src="/project-image/Scholar.png"
+          alt="scholar"
+          fill
+          className="object-cover"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "News Article Website",
+    description:
+      "A news article that every user can like and comment on the latest news.",
+    content: (
+      <div className="relative flex h-full w-full items-center justify-center text-white">
+        <Image
+          src="/project-image/News.png"
           alt="scholar"
           fill
           className="object-cover"
