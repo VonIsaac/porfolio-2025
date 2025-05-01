@@ -9,6 +9,7 @@ const linearGradients = [
   "linear-gradient(to bottom right, #ec4899, #6366f1)",
   "linear-gradient(to bottom right, #f97316, #eab308)",
   "linear-gradient(to bottom right, #9333ea, #3b82f6)",
+  "linear-gradient(to bottom right, #2563eb, #14b8a6)",
 ];
 
 export const StickyScroll = ({
@@ -18,6 +19,8 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
+    underconstruction: string;
+    techStack?: string[];
     content?: React.ReactNode;
   }[];
   contentClassName?: string;
@@ -66,10 +69,37 @@ export const StickyScroll = ({
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="mt-10 max-w-sm text-slate-300 ml-auto"
+                className="mt-4 max-w-sm text-slate-300"
               >
                 {item.description}
               </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                className="mt-4 inline-block text-sm px-3 py-1  text-yellow-300 font-extrabold rounded-full "
+                >
+               {item.underconstruction }
+              </motion.p>
+              
+              {item.techStack && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                  className="mt-6"
+                >
+                  <h3 className="text-md font-semibold text-slate-200 mb-2">Tech Stack:</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {item.techStack.map((tech, techIndex) => (
+                      <span 
+                        key={techIndex}
+                        className="px-3 py-1 bg-slate-800/50 text-slate-200 rounded-full text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
             </div>
           ))}
           <div className="h-60" />
