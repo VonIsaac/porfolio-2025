@@ -121,7 +121,7 @@ const content = [
     description:"A modern news platform where users can read, like, and comment on the latest articles. Features include personalized feeds and real-time notifications.",
     underconstruction: "Currently under construction(60%)",
     techStack: [
-      "socket.io",
+      "Socket.io",
       "React.js", 
       "Node.js", 
       "Express",
