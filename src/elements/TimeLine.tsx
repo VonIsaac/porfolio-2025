@@ -46,15 +46,13 @@ export function TimeLine() {
       content: (
         <div data-aos="fade-left">
           <p className="mb-8 text-xs font-bold text-sky-500 md:text-sm tracking-wider hover:text-sky-800">
-            Freelance Web Developer
+            Software Engineer Intern at <span className="text-neutral-500">IVE Inc.</span>
           </p>
           
           <div className="grid grid-cols-2 gap-4">
             <p className="tracking-wide text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-                Using cutting-edge web technology, I build responsive and user-friendly websites for clients as a freelance web developer. 
-                My areas of expertise are front-end and back-end development, with an emphasis on performance, functionality, and clean design. 
-                My ability to manage my time, solve problems,
-                and adjust to the demands of various projects has all improved as a result of working independently.
+              Currently working as a Software Engineer Intern at IVE Inc., where  I am focusing on Front End Development,
+              gaining hands-on experience in building user interfaces and enhancing my skills in web technologies.
             </p>
           </div>
         </div>
