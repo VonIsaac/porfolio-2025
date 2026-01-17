@@ -11,7 +11,7 @@ export function TimeLine() {
           <p className="mb-8 text-xs font-bold text-sky-500 md:text-sm tracking-wider hover:text-sky-800    ">
             UNITED CRISTIAN ACADEMY(UCA) - Senior High School
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <p className=" tracking-wide text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
                 I took the Information and Communications Technology (ICT) track in senior high school, where I finished my schooling.
                 I learned more about computer systems and other things there.  
@@ -30,7 +30,7 @@ export function TimeLine() {
           <p className="mb-8 text-xs font-bold text-sky-500 md:text-sm tracking-wider hover:text-sky-800    ">
             UNIVERSITY OF MUNTINLUPA - Bachelor of Science in Information Technology
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <p className="tracking-wide text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
              Pursuing a Bachelor of Science in Information Technology at the University of Muntinlupa,
              which is assisting me in expanding my understanding of a variety of IT-related topics, 
@@ -49,27 +49,30 @@ export function TimeLine() {
             Software Engineer Intern at <span className="text-neutral-500">IVE Inc.</span>
           </p>
           
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <p className="tracking-wide text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-              Currently working as a Software Engineer Intern at IVE Inc., where  I am Full Stack Development,
-              gaining hands-on experience in building user interfaces and enhancing my skills in web technologies.
+              Assisted in developing software applications based on projects from EGEMCO, the South Korean parent company. Responsibilities included writing code, fixing bugs, conducting testing, 
+              and collaborating with team members to deliver quality solutions aligned with the company&apos;s standards.
             </p>
           </div>
         </div>
       ),
     },
     {
-      title: "Nov 2025 - Present",
+      title: "October 2025 - May 2026",
       content: (
         <div data-aos="fade-left">
           <p className="mb-8 text-xs font-bold text-sky-500 md:text-sm tracking-wider hover:text-sky-800">
-            Software Engineer<span className="text-neutral-500">IVE Inc.</span>
+            Software Engineer at <span className="text-neutral-500"> IVE Inc.</span>
           </p>
           
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <p className="tracking-wide text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-              Currently working as a Software Engineer at IVE Inc., where  I am Full Stack Development,
-              gaining hands-on experience in building user interfaces and enhancing my skills in web technologies.
+              Retained as a full-time Software Engineer in recognition of consistent contributions during the internship. 
+              Handled more complex tasks independently, 
+              improved code quality across multiple projects, and strengthened collaboration between IVE Inc. 
+              and EGEMCO to ensure smooth project delivery and alignment with the mother company&apos;s technical standards.
+
             </p>
           </div>
         </div>

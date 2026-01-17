@@ -5,7 +5,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 // SVG items
 const testimonials = [
-  { svg: "/svg/Figma.svg" },
+  { svg: "/svg/Java.svg" },
   { svg: "/svg/React.svg" },
   { svg: "/svg/Next.svg" },
   { svg: "/svg/Tailwind.svg" },
@@ -20,8 +20,8 @@ const testimonials = [
   { svg: "/svg/MySQL.svg" },
   { svg: "/svg/NPM.svg" },
   { svg: "/svg/Node.svg" },
-  { svg: "/svg/jwt.svg" },
-  { svg: "/svg/Sequelize.svg" },
+  { svg: "/svg/Swagger.svg" },
+  { svg: "/svg/Spring.svg" },
 ];
 
 export function Infinite() {

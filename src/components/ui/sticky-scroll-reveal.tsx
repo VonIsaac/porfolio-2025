@@ -51,25 +51,25 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      className="relative flex h-[30rem] flex-row-reverse justify-center space-x-10 space-x-reverse overflow-y-auto rounded-md p-10"
+      className="relative flex h-[30rem] flex-row-reverse justify-center lg:space-x-10 lg:space-x-reverse overflow-y-auto rounded-md p-4 sm:p-6 lg:p-10"
       ref={ref}
     >
       {/* TEXT ON THE RIGHT */}
-      <div className="relative flex items-start px-4">
-        <div className="max-w-2xl">
+      <div className="relative flex items-start w-full lg:w-auto px-2 sm:px-4">
+        <div className="w-full max-w-2xl">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20 text-left">
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-2xl font-bold text-slate-100"
+                className="text-xl sm:text-2xl font-bold text-slate-100"
               >
                 {item.title}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="mt-4 max-w-sm text-slate-300"
+                className="mt-4 max-w-sm text-slate-300 text-sm sm:text-base"
               >
                 {item.description}
               </motion.p>
@@ -80,7 +80,7 @@ export const StickyScroll = ({
                 >
                {item.underconstruction }
               </motion.p>
-              
+
               {item.techStack && (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -90,7 +90,7 @@ export const StickyScroll = ({
                   <h3 className="text-md font-semibold text-slate-200 mb-2">Tech Stack:</h3>
                   <div className="flex flex-wrap gap-2">
                     {item.techStack.map((tech, techIndex) => (
-                      <span 
+                      <span
                         key={techIndex}
                         className="px-3 py-1 bg-slate-800/50 text-slate-200 rounded-full text-sm"
                       >
@@ -106,11 +106,11 @@ export const StickyScroll = ({
         </div>
       </div>
 
-      {/* STICKY IMAGE BOX ON THE LEFT */}
+      {/* STICKY IMAGE BOX ON THE LEFT - hidden on mobile/tablet */}
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "sticky top-10 h-60 w-[500px] overflow-hidden rounded-md bg-white lg:block",
+          "sticky top-10 h-60 w-[500px] overflow-hidden rounded-md bg-white hidden lg:block shrink-0",
           contentClassName
         )}
       >
