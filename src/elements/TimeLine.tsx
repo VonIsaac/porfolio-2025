@@ -42,7 +42,7 @@ export function TimeLine() {
       ),
     },
     {
-      title: "Present",
+      title: "Jun 2025 - Oct 2025",
       content: (
         <div data-aos="fade-left">
           <p className="mb-8 text-xs font-bold text-sky-500 md:text-sm tracking-wider hover:text-sky-800">
@@ -51,7 +51,24 @@ export function TimeLine() {
           
           <div className="grid grid-cols-2 gap-4">
             <p className="tracking-wide text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-              Currently working as a Software Engineer Intern at IVE Inc., where  I am focusing on Front End Development,
+              Currently working as a Software Engineer Intern at IVE Inc., where  I am Full Stack Development,
+              gaining hands-on experience in building user interfaces and enhancing my skills in web technologies.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Nov 2025 - Present",
+      content: (
+        <div data-aos="fade-left">
+          <p className="mb-8 text-xs font-bold text-sky-500 md:text-sm tracking-wider hover:text-sky-800">
+            Software Engineer<span className="text-neutral-500">IVE Inc.</span>
+          </p>
+          
+          <div className="grid grid-cols-2 gap-4">
+            <p className="tracking-wide text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
+              Currently working as a Software Engineer at IVE Inc., where  I am Full Stack Development,
               gaining hands-on experience in building user interfaces and enhancing my skills in web technologies.
             </p>
           </div>
